@@ -1,0 +1,17 @@
+locations = ["Bangalore","Mysore","Supernation","404NotFound","Bangalore","Bangalore","Bangalore"]
+
+def findPercentage(locations):
+    n = len(locations)
+    b = 0
+    for i in locations:
+        if i == "Bangalore":
+            b += 1
+    return ((b/n)*100) 
+
+percentage = findPercentage(locations)
+
+print(len(locations),"OP Registration took place of which ",int(percentage),"% are from Bangalore and ",(100-int(percentage)),"% are outstation.")
+
+
+
+
